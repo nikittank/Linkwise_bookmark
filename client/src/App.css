@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Cursor styles for drag and drop */
+.draggable-card {
+  cursor: grab;
+}
+
+/* Only apply grabbing cursor when actually dragging */
+.draggable-card.dragging {
+  cursor: grabbing !important;
+}
+
+.draggable-card.dragging * {
+  cursor: grabbing !important;
+}
+
+/* Ensure interactive elements always have pointer cursor when not dragging */
+.draggable-card:not(.dragging) button,
+.draggable-card:not(.dragging) a,
+.draggable-card:not(.dragging) [role="button"] {
+  cursor: pointer !important;
+}
+
+/* Prevent drag cursor on interactive elements */
+.draggable-card button,
+.draggable-card a,
+.draggable-card [role="button"] {
+  cursor: pointer !important;
+}
