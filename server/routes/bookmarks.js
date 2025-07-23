@@ -9,7 +9,7 @@ const { db } = require('../database');
 
 // Initialize Gemini AI with hardcoded key for testing
 // This is a temporary fix - in production, always use environment variables
-const apiKey = 'AIzaSyDLAxAGVT9WTCAXo-ntiwo4sshGc4g_3bg'; // Using the key that works with curl
+const apiKey = 'GEMINI_API_KEY'; // Using the key that works with curl
 console.log('Using Gemini API Key:', apiKey ? `${apiKey.substring(0, 8)}...` : 'undefined');
 const genAI = new GoogleGenerativeAI(apiKey);
 
@@ -92,7 +92,7 @@ const getSummary = async (url) => {
       path: `/${target}`,
       headers: {
         'Accept': 'text/plain',
-        'Authorization': 'Bearer jina_fcfec48502aa462ba77136fd0f81d34eu3GQxGSR9EkFjs4p0afhun_56fd4',
+        'Authorization': 'Bearer JINA_AI_API_KEY',
         'X-Return-Format': 'text'
       }
     };
