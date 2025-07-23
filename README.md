@@ -25,7 +25,7 @@ A full-stack application that allows users to save bookmarks with automatic AI-p
 
 ```bash
 # Install root dependencies
-npm run install-all
+npm run install
 ```
 
 ### 2. Start Development Servers
@@ -115,12 +115,3 @@ NODE_ENV=development
 │   └── index.js          # Express server
 └── package.json          # Root dependencies
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
