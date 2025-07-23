@@ -2,6 +2,8 @@
 
 A full-stack application that allows users to save bookmarks with automatic AI-powered summaries using the free Jina AI API.
 
+<img width="1408" height="881" alt="Screenshot 2025-07-23 121059" src="https://github.com/user-attachments/assets/8390c85d-898c-44d3-857f-4407ab4dbff0" />
+
 ## Features
 
 - **Authentication**: Email/password signup and login with JWT tokens
@@ -57,10 +59,15 @@ This will start:
 - `POST /api/auth/register` - Create new user account
 - `POST /api/auth/login` - Login user
 
+<img width="1921" height="894" alt="screencapture-localhost-3000-2025-07-23-11_41_05" src="https://github.com/user-attachments/assets/e7065f50-47e9-4f00-8899-1500dbf85e4c" />
+
 ### Bookmarks
 - `GET /api/bookmarks` - Get user's bookmarks (with optional tag filter)
 - `POST /api/bookmarks` - Create new bookmark with auto-summary
 - `DELETE /api/bookmarks/:id` - Delete bookmark
+
+
+<img width="1701" height="965" alt="screencapture-localhost-3000-2025-07-23-12_10_25" src="https://github.com/user-attachments/assets/4277e6d6-99dd-415d-b166-a81905ff0e6e" />
 
 ## Environment Variables
 
